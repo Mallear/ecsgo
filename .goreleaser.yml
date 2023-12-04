@@ -45,20 +45,5 @@ archives:
       - LICENSE
 release:
   github:
-    owner: tedsmitt
+    owner: Mallear
     name: ecsgo
-brews:
-  - name: ecsgo
-    tap:
-      owner: tedsmitt
-      name: homebrew-ecsgo
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
-    commit_author:
-      name: tedsmitt
-      email: ed@edintheclouds.io
-    description: "Interactive CLI tool which acts as a wrapper around the ECS ExecuteCommand API."
-    license: Apache2
-    test: |
-      system "#{bin}/goreleaser -v"
-    dependencies:
-      - name: go
